@@ -1,0 +1,121 @@
+.file-upload-container {
+    width: 100%;
+}
+
+.file-upload-dropzone {
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-lg);
+    padding: var(--space-2xl);
+    text-align: center;
+    background: var(--color-surface);
+    transition: all var(--transition-base);
+    cursor: pointer;
+}
+
+.file-upload-dropzone:hover {
+    border-color: var(--color-accent);
+    background: var(--color-surface-hover);
+}
+
+.file-upload-dropzone.dragging {
+    border-color: var(--color-accent-light);
+    background: rgba(99, 102, 241, 0.1);
+    transform: scale(1.02);
+}
+
+.file-input {
+    display: none;
+}
+
+.file-upload-label {
+    cursor: pointer;
+    display: block;
+}
+
+.upload-icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-sm);
+    filter: drop-shadow(0 0 10px rgba(99, 102, 241, 0.5));
+}
+
+.file-upload-label h3 {
+    color: var(--color-text);
+    margin-bottom: var(--space-xs);
+}
+
+.file-upload-label p {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-sm);
+}
+
+.upload-hint {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    opacity: 0.7;
+}
+
+.file-list {
+    margin-top: var(--space-lg);
+}
+
+.file-list h4 {
+    margin-bottom: var(--space-sm);
+    color: var(--color-text);
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-sm);
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-xs);
+    transition: all var(--transition-fast);
+}
+
+.file-item:hover {
+    background: var(--color-surface-hover);
+}
+
+.file-info {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    flex: 1;
+}
+
+.file-icon {
+    font-size: 1.5rem;
+}
+
+.file-details {
+    flex: 1;
+}
+
+.file-name {
+    color: var(--color-text);
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.file-size {
+    color: var(--color-text-secondary);
+    font-size: 0.875rem;
+}
+
+.file-remove {
+    background: transparent;
+    border: none;
+    color: var(--color-error);
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: var(--space-xs);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+}
+
+.file-remove:hover {
+    background: rgba(239, 68, 68, 0.1);
+    transform: scale(1.1);
+}
